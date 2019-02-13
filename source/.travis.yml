@@ -7,8 +7,8 @@ env:
   global:
     - CI=true
   matrix:
-    -TEST_DOC=false
-    -TEST_DOC=true
+    - TEST_DOC=false
+    - TEST_DOC=true
 install:
   - pip install -r requirements.txt
 
