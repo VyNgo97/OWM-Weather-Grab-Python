@@ -25,7 +25,7 @@ def weatherGrab():
         # outputs temperature in imperial units
         print(city + ' Weather: \n' + str(weather_data))
     except KeyError as e:
-        print("That is an invalid city name.")
+        print("No data for {}.".format(city))
 
 
 weatherGrab()
