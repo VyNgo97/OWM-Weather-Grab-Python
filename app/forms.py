@@ -4,5 +4,5 @@ from wtforms.validators import DataRequired
 
 
 class WeatherForm(FlaskForm):
-    city = StringField('City:', validators=[DataRequired()])
+    city = StringField('City', validators=[DataRequired()])
     submit = SubmitField('Submit')
