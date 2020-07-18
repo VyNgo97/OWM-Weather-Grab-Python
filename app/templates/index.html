@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>test</title>
+    </head>
+
+    <body>
+        <h2>Enter a city</h2>
+        <form action="" method="GET" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.city.label }}
+                {{ form.city(size=32) }}
+                {% for error in form.city.errors %}
+                <span style='color: red'>[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                <p>{{ form.submit() }}</p>
+            </p>
+        </form>
+    </body>
+
+</html>
