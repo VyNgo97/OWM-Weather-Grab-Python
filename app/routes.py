@@ -13,7 +13,7 @@ def index():
         return redirect(url_for('index'))
     else:
         flash(f'{form.city.data} not valid')
-    return render_template('index.html', title='test1', form=form)
+    return render_template('index.html', title='test', form=form)
 
 
 
